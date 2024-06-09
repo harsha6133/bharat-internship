@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Home</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Blog Home</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/new">Create New Post</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container home-container">
+    <ul class="posts-list">
+      <% posts.forEach(post => { %>
+        <li class="post-item">
+          <a href="/post/<%= post._id %>" class="post-title"><%= post.title %></a>
+          <p class="post-content"><%= post.content.substring(0, 100) %>...</p>
+          <a href="/edit/<%= post._id %>" class="edit-link">Edit</a>
+        </li>
+      <% }); %>
+    </ul>
+  </main>
+</body>
+</html>
