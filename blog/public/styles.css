@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: #ff0000;
+  color: #fff;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Center Form Container */
+.form-container {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Center Home Container */
+.home-container {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Blog Posts */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.posts-list {
+  padding: 0;
+}
+
+.post-item {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.post-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.post-content {
+  margin-top: 10px;
+  color: #555;
+}
+
+.edit-link {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.edit-link:hover {
+  background-color: #b30000;
+}
+
+/* New Post Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+form input[type="text"],
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
